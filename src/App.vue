@@ -1,8 +1,9 @@
 <template>
   <v-app>
     <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
+      <v-toolbar-title class="headline text-uppercase pointer" @click="onTitleClick">
       <img
+        class="mr-2"
         :src="require('./assets/logo.png')"
         height="16px"
       />
@@ -29,6 +30,15 @@ export default {
     return {
       //
     }
+  },
+  methods: {
+    onTitleClick() {
+      window.location = window.location.origin + '/';
+    }
   }
 }
 </script>
+
+<style>
+.pointer {cursor: pointer;}
+</style>
