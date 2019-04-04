@@ -1,14 +1,11 @@
 <template>
-  <v-container class='container'>
+  <v-container>
     <v-btn flat color="white" class="logo"><img src="../assets/logo_white.png" /> Gomusu</v-btn>
     <v-layout
       text-xs-center
       wrap
       class="main"
     >
-      <v-flex xs12>
-      </v-flex>
-
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
           The easiest way to support a specific musician on Youtube.
@@ -107,5 +104,19 @@
 }
 #mc_embed_signup .mc_signup .clear .button {
   background-color: transparent;
+}
+
+.bwgradient {
+  margin-top: 200px;
+  box-shadow: 0 -25px 50px 100px white;
+  background-color: white;
+  color: black;
+}
+.bwgradient p {
+  color: #919aa3;
+}
+
+.imgpar img {
+  width: 100%;
 }
 </style>
