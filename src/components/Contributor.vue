@@ -1,17 +1,20 @@
 <template>
-  <v-container>
+  <v-container class='container'>
+    <v-btn flat color="white" class="logo"><img src="../assets/logo_white.png" /> Gomusu</v-btn>
     <v-layout
       text-xs-center
       wrap
+      class="main"
     >
       <v-flex xs12>
       </v-flex>
 
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
-          Gomusu Rocks!
+          The easiest way to support a specific musician on Youtube.
         </h1>
         <p class="subheading font-weight-regular">
+          Choose a specific person. Choose the specific person. Support in one-click. Keep the music going.
         </p>
 
 <!-- Begin Mailchimp Signup Form -->
@@ -41,6 +44,21 @@
 </script>
 
 <style>
+.logo {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2rem;
+  left: 15%;
+  top: 10%;
+}
+.logo img {
+  height: 3rem;
+}
+
+.main {
+  margin-top: 75vh;
+}
+
 #mc_embed_signup form {text-align:center; padding:10px 0 10px 0;}
 .mc-field-group { display: inline-block; } /* positions input field horizontally */
 #mc_embed_signup input.email {font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-size: 15px; border: 1px solid #ABB0B2;  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #343434; background-color: #fff; box-sizing:border-box; height:32px; padding: 0px 0.4em; display: inline-block; margin: 0; width:350px; vertical-align:top;}
