@@ -21,11 +21,12 @@
 <div id="mc_embed_signup">
 <form action="https://gomusu.us17.list-manage.com/subscribe/post?u=ea83671015743a0a68746f45e&amp;id=df7a38b83b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
    <div id="mc_embed_signup_scroll">
-    <label for="mce-EMAIL">Get early access</label>
-    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <div class="mc_signup">
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ea83671015743a0a68746f45e_df7a38b83b" tabindex="-1" value=""></div>
-   <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   <div class="clear"><input type="submit" value="I WANT TO SUPPORT" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   </div>
    </div>
 </form>
 </div>
@@ -56,7 +57,7 @@
 }
 
 .main {
-  margin-top: 75vh;
+  margin-top: 32vw;
 }
 
 #mc_embed_signup form {text-align:center; padding:10px 0 10px 0;}
@@ -84,4 +85,27 @@
 #mergeRow-gdpr {margin-top: 20px;}
 #mergeRow-gdpr fieldset label {font-weight: normal;}
 #mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+
+.mc_signup {
+  padding: 1em;
+  border-radius: 2.5em;
+  background-color: white;
+  display: inline-block;
+}
+#mc_embed_signup .mc_signup .email {
+  border-width: 0px;
+}
+#mc_embed_signup .mc_signup .clear {
+  box-shadow: 0 0 0 1em #55bb33;
+  border-radius: 2.5em;
+  background-color: #55bb33;
+}
+@media (max-width: 768px) {
+  #mc_embed_signup .mc_signup .clear {
+    margin-top: 10px;
+  }
+}
+#mc_embed_signup .mc_signup .clear .button {
+  background-color: transparent;
+}
 </style>
