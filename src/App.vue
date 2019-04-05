@@ -45,9 +45,6 @@ export default {
 .content {
   min-height: 100vh;
   background-color: black;
-  background-image: url('./assets/header.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
   color: white;
 }
 

@@ -1,12 +1,10 @@
 <template>
 <div>
-  <v-container fluid>
-    <v-btn flat color="white" class="logo"><img src="../assets/logo_white.png" /> Gomusu</v-btn>
-    <v-layout
-      text-xs-center
-      wrap
-      class="main"
-    >
+  <v-container fluid text-xs-center class="intro">
+    <div class="ml-5 mr-5 img100">
+    <div class="text-xs-left mw1125"><v-btn flat color="white" class="logo" @click="onHome()"><img src="../assets/logo_white.png" /> Gomusu</v-btn></div>
+    <img class="mt-5 fullwidth" src="../assets/mockup_main.png" />
+    <v-layout wrap mt-5 class="mw1125">
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
           The easiest way to tip the musician(s) you love on Youtube.
@@ -32,6 +30,7 @@
       </v-flex>
 
     </v-layout>
+    </div>
   </v-container>
 
   <v-container fluid text-xs-center class="personas">
@@ -120,24 +119,32 @@
 <script>
   export default {
     data: () => ({
-    })
+    }),
+    methods: {
+      onHome() {
+        window.location = 'https://gomusu.com';
+      }
+    }
   }
 </script>
 
 <style>
+.intro {
+  background-color: #192646;
+}
+
+.intro .mw1125 {
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo {
-  position: absolute;
   text-transform: uppercase;
   font-size: 2rem;
-  left: 15%;
-  top: 10%;
 }
 .logo img {
   height: 3rem;
-}
-
-.main {
-  margin-top: 32vw;
 }
 
 #mc_embed_signup form {text-align:center; padding:10px 0 10px 0;}
