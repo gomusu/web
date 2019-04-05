@@ -110,6 +110,10 @@
 </div>
 
   </v-container>
+
+  <v-container fluid class="bottomcopy">
+    <h1 class="display-1 mb-3 ml-5"><span class="copy mr-3"><img src="../assets/logo_blue.png" /> Gomusu</span> All rights reserved 2019 </h1>
+  </v-container>
 </div>
 </template>
 
@@ -222,5 +226,19 @@
   color: white;
 }
 
+.bottomcopy {
+  background-color: white;
+  color: #919aa3;
+}
 
+.bottomcopy .copy {
+  color: #0074e4;
+  text-transform: uppercase;
+}
+
+.bottomcopy .copy img {
+  height: 2em;
+  position: relative;
+  top: 0.6em;
+}
 </style>
