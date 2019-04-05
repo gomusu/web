@@ -1,5 +1,6 @@
 <template>
-  <v-container>
+<div>
+  <v-container fluid>
     <v-btn flat color="white" class="logo"><img src="../assets/logo_white.png" /> Gomusu</v-btn>
     <v-layout
       text-xs-center
@@ -32,6 +33,51 @@
 
     </v-layout>
   </v-container>
+  <v-container fluid text-xs-center class="personas">
+    <h1 class="display-2 font-weight-bold mt-5">Why Gomusu?</h1>
+    <v-layout wrap row class="mt-4">
+      <v-flex sm12 md4><img src="../assets/img_1.png" /></v-flex>
+      <v-flex sm12 md8>
+        <h1 class="mt-5">Easy, one-click tip directly from Chrome</h1>
+        <p>
+          Listen as you’re used to.
+          Click on ‘Tip’ to support the musician(s) you’re listening to! Click on ‘C-Tip’ for a custom tip:
+          You can choose the Tip amount, its frequency and for the first time...
+        </p>
+      </v-flex>
+    </v-layout>
+    <v-layout wrap row reverse class="mt-4">
+      <v-flex sm12 md4><img src="../assets/img_2.png" /></v-flex>
+      <v-flex sm12 md8>
+        <h1 class="mt-5">You can pick exactly who you want to support</h1>
+        <p>
+          Does the singer gets it all or is it all about that bass? You choose.
+          Gomusu lets you tip your favorite band, band member or solo artist.
+          Whoever you choose your tip does matter because...
+        </p>
+      </v-flex>
+    </v-layout>
+    <v-layout wrap row class="mt-4">
+      <v-flex sm12 md4><img src="../assets/img_3.png" /></v-flex>
+      <v-flex sm12 md8>
+        <h1 class="mt-5">We Cut the middlemen</h1>
+        <p>
+          Your musician(s) of choice gets 96% of the tip. No record company or distributor fee. No parasite uploader.
+          We keep 4% to cover transaction fees and make Gomusu even more awesome.
+        </p>
+      </v-flex>
+    </v-layout>
+    <v-layout wrap row reverse class="mt-4">
+      <v-flex sm12 md4><img src="../assets/img_4.png" /></v-flex>
+      <v-flex sm12 md8>
+        <h1 class="mt-5">And Yes, with Gomusu, you CAN do one-time payments</h1>
+        <p>
+          You don’t have to be a regular patron! Support once, without commitment: it still helps.
+        </p>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</div>
 </template>
 
 <script>
@@ -106,17 +152,24 @@
   background-color: transparent;
 }
 
-.bwgradient {
-  margin-top: 200px;
-  box-shadow: 0 -25px 50px 100px white;
+.personas {
   background-color: white;
-  color: black;
-}
-.bwgradient p {
-  color: #919aa3;
+  color: #171c34;
 }
 
-.imgpar img {
+.personas img {
   width: 100%;
+  min-width: 320px;
+  max-width: 450px;
 }
+
+.personas p {
+  color:  #919aa3;
+  font-size: 1.3em;
+  margin-top: 1em;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+
 </style>
