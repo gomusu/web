@@ -9,10 +9,10 @@
     >
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
-          The easiest way to support a specific musician on Youtube.
+          The easiest way to tip the musician(s) you love on Youtube.
         </h1>
         <p class="subheading font-weight-regular">
-          Choose a specific person. Choose the specific person. Support in one-click. Keep the music going.
+          Gomusu provides One-click tip to your favorite band, band member or solo artist. Keep the music going.
         </p>
 
 <!-- Begin Mailchimp Signup Form -->
@@ -23,7 +23,7 @@
     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ea83671015743a0a68746f45e_df7a38b83b" tabindex="-1" value=""></div>
-   <div class="clear"><input type="submit" value="I WANT TO SUPPORT" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   <div class="clear"><input type="submit" value="GET EARLY ACCESS" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
    </div>
    </div>
 </form>
@@ -103,7 +103,7 @@
     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ea83671015743a0a68746f45e_df7a38b83b" tabindex="-1" value=""></div>
-   <div class="clear"><input type="submit" value="I WANT TO SUPPORT" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   <div class="clear"><input type="submit" value="GET EARLY ACCESS" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
    </div>
    </div>
 </form>
