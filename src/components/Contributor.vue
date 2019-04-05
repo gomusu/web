@@ -33,6 +33,7 @@
 
     </v-layout>
   </v-container>
+
   <v-container fluid text-xs-center class="personas">
     <h1 class="display-2 font-weight-bold mt-5">Why Gomusu?</h1>
     <v-layout wrap row class="mt-4">
@@ -77,6 +78,21 @@
       </v-flex>
     </v-layout>
   </v-container>
+
+  <v-container fluid text-xs-center class="howitworks">
+    <h1 class="display-2 font-weight-bold mt-5">How it works</h1>
+    <img class="mt-5 fullwidth" src="../assets/youtube_mock.png" />
+    <h2 class="display-1 font-weight-bold">1. Install the add-on</h2>
+    <v-layout wrap row class="mt-5 img100">
+      <v-flex sm12 md4>
+        <img src="../assets/payment_methods.png" /><h2 class="display-1 font-weight-bold">2. Set the payment method</h2>
+      </v-flex>
+      <v-flex sm12 md8>
+        <img src="../assets/outta_garage.png" /><h2 class="display-1 font-weight-bold">3. One-click support</h2>
+      </v-flex>
+    </v-layout>
+  </v-container>
+
 </div>
 </template>
 
@@ -169,6 +185,19 @@
   margin-top: 1em;
   max-width: 80%;
   margin-left: 10%;
+}
+
+.howitworks {
+  background-color: #f2f2f6;
+  color: #131313;
+}
+
+.howitworks .fullwidth {
+  max-width: 100%;
+}
+
+.img100 img {
+  max-width: 100%;
 }
 
 
