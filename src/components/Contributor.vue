@@ -15,13 +15,13 @@
 
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-<form action="https://gomusu.us17.list-manage.com/subscribe/post?u=ea83671015743a0a68746f45e&amp;id=df7a38b83b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://gomusu.us17.list-manage.com/subscribe/post?u=ea83671015743a0a68746f45e&amp;id=df7a38b83b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
    <div id="mc_embed_signup_scroll">
     <div class="mc_signup">
-    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" v-model="email1" required>
    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ea83671015743a0a68746f45e_df7a38b83b" tabindex="-1" value=""></div>
-   <div class="clear"><input type="submit" value="GET EARLY ACCESS" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   <div class="clear" :class="{disabled:!email1}"><input type="submit" value="GET EARLY ACCESS" name="subscribe" id="mc-embedded-subscribe" class="button" :disabled="!email1"></div>
    </div>
    </div>
 </form>
@@ -99,10 +99,10 @@
 <form action="https://gomusu.us17.list-manage.com/subscribe/post?u=ea83671015743a0a68746f45e&amp;id=df7a38b83b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
    <div id="mc_embed_signup_scroll">
     <div class="mc_signup">
-    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" v-model="email3" required>
    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ea83671015743a0a68746f45e_df7a38b83b" tabindex="-1" value=""></div>
-   <div class="clear"><input type="submit" value="GET EARLY ACCESS" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   <div class="clear" :class="{disabled:!email3}"><input type="submit" value="GET EARLY ACCESS" name="subscribe" id="mc-embedded-subscribe" class="button" :disabled="!email3"></div>
    </div>
    </div>
 </form>
@@ -119,6 +119,8 @@
 <script>
   export default {
     data: () => ({
+      email1: '',
+      email3: ''
     }),
     methods: {
       onHome() {
@@ -186,6 +188,13 @@
   box-shadow: 0 0 0 1em #55bb33;
   border-radius: 2.5em;
   background-color: #55bb33;
+}
+#mc_embed_signup .mc_signup .clear.disabled {
+  background-color: rgba(85, 187, 51, 0.5);
+  box-shadow: 0 0 0 1em rgba(85, 187, 51, 0.5);
+}
+#mc_embed_signup .disabled .button:hover {
+  cursor: inherit;
 }
 @media (max-width: 768px) {
   #mc_embed_signup .mc_signup .clear {
