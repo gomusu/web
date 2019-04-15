@@ -3,9 +3,8 @@
   <v-container fluid text-xs-center class="intro">
     <div class="ml-5 mr-5 img100">
     <div class="text-xs-left mw1125"><v-btn flat color="white" class="logo" @click="onHome()"><img src="../assets/logo_white.png" /> Gomusu</v-btn></div>
-    <img class="mt-5 fullwidth" src="../assets/mockup_main.png" />
-    <v-layout wrap mt-5 class="mw1125">
-      <v-flex mb-4>
+    <v-layout wrap row reverse mt-5 class="mt-5">
+      <v-flex sm12 md8 mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
           The easiest way to tip the musician(s) you love on Youtube.
         </h1>
@@ -28,6 +27,7 @@
 </div>
 
       </v-flex>
+      <v-flex sm12 md4><img src="../assets/mockup_main.png" /></v-flex>
 
     </v-layout>
     </div>
